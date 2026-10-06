@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>maniva beauty · Productos profesionales para uñas Pink Mask</title>
+<meta name="description" content="Esmaltes semipermanentes, bases, tops, Builder Gel y cabinas Pink Mask para manicuras, salones y amantes de las uñas. Armá tu pedido y envialo por WhatsApp.">
+<meta property="og:title" content="maniva beauty">
+<meta property="og:description" content="Productos profesionales para uñas Pink Mask. Armá tu pedido y envialo por WhatsApp.">
+<meta property="og:image" content="https://www.manivabeauty.com.ar/img/og.jpg">
+<meta property="og:url" content="https://www.manivabeauty.com.ar/">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="marca" href="#inicio">maniva<span>beauty</span></a>
+  <nav>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#kits">Kits</a>
+    <a href="#como-comprar">Cómo comprar</a>
+  </nav>
+  <button class="btn-carrito" id="abrirCarrito" aria-label="Ver pedido">Pedido <span id="contador">0</span></button>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="hero-txt">
+      <p class="eyebrow">Productos profesionales para uñas · Pink Mask</p>
+      <h1>Todo para tu mesa de trabajo, en un solo pedido.</h1>
+      <p>Esmaltes semipermanentes, bases, tops, Builder Gel y cabinas Pink Mask para manicuras, salones y amantes de las uñas. Elegí tus productos, armá el pedido y envialo por WhatsApp.</p>
+      <div class="acciones">
+        <a class="btn" href="#catalogo">Ver catálogo</a>
+        <a class="btn sec" href="maniva-lista-precios-octubre-2026.pdf" download>Descargar lista de precios</a>
+      </div>
+    </div>
+    <img class="hero-img" src="img/hero.jpg" alt="Manos con manicura nude sobre tela de seda">
+  </section>
+
+  <section class="beneficios">
+    <div><b>Productos originales</b><span>Pink Mask, nuevos y sellados.</span></div>
+    <div><b>Mejor precio por transferencia</b><span>Y descuentos por cantidad desde 6 unidades.</span></div>
+    <div><b>Factura A y B</b><span>Para profesionales y salones.</span></div>
+    <div><b>Atención personal</b><span>Te asesoramos por WhatsApp.</span></div>
+  </section>
+
+  <section id="catalogo" class="bloque">
+    <div class="tit">
+      <h2>Catálogo</h2>
+      <p class="vigencia">Precios de <span id="vigencia"></span></p>
+    </div>
+    <div class="pago" role="radiogroup" aria-label="Forma de pago">
+      <span>Ver precios para pago con:</span>
+      <label><input type="radio" name="pago" value="efectivo" checked> Efectivo o transferencia</label>
+      <label><input type="radio" name="pago" value="tarjeta"> Tarjeta</label>
+    </div>
+    <div class="filtros" id="filtros">
+      <button data-cat="todos" class="activo">Todo</button>
+      <button data-cat="esmaltes">Esmaltes</button>
+      <button data-cat="bases">Bases y tops</button>
+      <button data-cat="construccion">Construcción</button>
+      <button data-cat="equipamiento">Equipamiento</button>
+    </div>
+    <div class="grilla" id="grilla"></div>
+  </section>
+
+  <section id="kits" class="bloque">
+    <div class="tit"><h2>Kits</h2><p class="vigencia">Combinaciones listas, con precio especial</p></div>
+    <div class="grilla kits" id="grillaKits"></div>
+  </section>
+
+  <section class="descuentos bloque" id="descuentos">
+    <h2>Descuentos por cantidad</h2>
+    <p>En esmaltes, bases, tops y Builder Gel, pagando en efectivo o por transferencia. Se suman unidades de cualquier color.</p>
+    <div class="niveles" id="niveles"></div>
+    <p class="chico">No aplican a la cabina ni a los kits, y no se suman con otras promociones. El carrito los calcula solo.</p>
+  </section>
+
+  <section id="como-comprar" class="bloque como">
+    <h2>Cómo comprar</h2>
+    <ol>
+      <li><b>Armá tu pedido</b> agregando productos y kits al carrito.</li>
+      <li><b>Envialo por WhatsApp</b> con un toque: nos llega el detalle completo.</li>
+      <li><b>Coordinamos pago y entrega.</b> Transferencia, efectivo o tarjeta.</li>
+    </ol>
+    <div class="envios">
+      <h3>Envíos</h3>
+      <ul id="envios"></ul>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div>
+    <a class="marca" href="#inicio">maniva<span>beauty</span></a>
+    <p>Distribuidor de productos Pink Mask en Argentina.</p>
+  </div>
+  <div class="contacto">
+    <a id="pieWhatsapp" href="#">WhatsApp</a>
+    <a id="pieInstagram" href="#" target="_blank" rel="noopener">Instagram</a>
+    <a href="maniva-lista-precios-octubre-2026.pdf" download>Lista de precios (PDF)</a>
+  </div>
+  <p class="legal">Precios con IVA incluido, válidos durante el mes indicado o hasta agotar stock. Pueden cambiar si Pink Mask actualiza su lista. Pink Mask es una marca de su titular; maniva beauty es distribuidor.</p>
+</footer>
+
+<aside class="carrito" id="carrito" aria-hidden="true">
+  <div class="carrito-panel">
+    <div class="carrito-top">
+      <h2>Tu pedido</h2>
+      <button class="cerrar" id="cerrarCarrito" aria-label="Cerrar">×</button>
+    </div>
+    <div id="items" class="items"></div>
+    <div id="aviso" class="aviso"></div>
+    <div class="totales" id="totales"></div>
+    <label class="campo">Nombre<input id="nombre" autocomplete="name" placeholder="Tu nombre"></label>
+    <label class="campo">Localidad<input id="localidad" autocomplete="address-level2" placeholder="Barrio o ciudad, para calcular el envío"></label>
+    <button class="btn enviar" id="enviar">Enviar pedido por WhatsApp</button>
+    <p class="chico">No se cobra nada en la web. Te respondemos para confirmar stock, pago y envío.</p>
+  </div>
+</aside>
+<div class="velo" id="velo"></div>
+
+<script src="config.js"></script>
+<script src="data/productos.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
