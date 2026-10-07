@@ -1,2 +1,7 @@
 [build]
   publish = "."
+
+[[redirects]]
+  from = "/precios"
+  to = "/maniva-lista-precios-octubre-2026.pdf"
+  status = 302
