@@ -216,14 +216,23 @@ window.CATALOGO = {
    "sku": "UVLMP-001",
    "cat": "equipamiento",
    "nombre": "Cabina ProLuminance UV LED 72 W",
-   "tono": "69 mini LEDs, sensor, timer 10/30/60/120 s, modo bajo calor",
+   "tono": "Precio de lanzamiento por transferencia. 69 mini LEDs, sensor, timer 10/30/60/120 s, modo bajo calor",
    "tarjeta": 287234,
-   "efectivo": 272900,
+   "efectivo": 259900,
    "minimo": 239362.2,
    "sinNivel": true
   }
  ],
  "kits": [
+  {
+   "id": "KIT-PRO-COMPLETO",
+   "nombre": "Kit Pro Completo",
+   "incluye": ["UVLMP-001", "GELCOL-008", "GELCOL-001", "GELCOL-002", "GELCOL-152", "GELCOL-136", "GELCOL-101"],
+   "detalle": "Cabina ProLuminance 72 W + Rubber Base Clear + Base Coat + Top Coat + Baby Milk + Volcano + Back in Black",
+   "tarjeta": 333900,
+   "efectivo": 299900,
+   "minimo": 297763.1
+  },
   {
    "id": "KIT-ESENCIAL",
    "nombre": "Kit Esencial",
@@ -316,7 +325,7 @@ window.CATALOGO = {
    ],
    "detalle": "Cabina ProLuminance 72 W + Rubber Base Clear + Top Coat + Pinky Way",
    "tarjeta": 303400,
-   "efectivo": 288300,
+   "efectivo": 276000,
    "minimo": 268562.79
   }
  ]
